@@ -1,4 +1,4 @@
-# FOSSology
+# FOSSology UI
 
 [![GPL-2.0](https://img.shields.io/github/license/fossology/fossology)](LICENSE)
 [![Travis-CI Build Status](https://travis-ci.org/fossology/fossology.svg?branch=master)](https://travis-ci.org/fossology/fossology)
@@ -17,17 +17,10 @@ FOSSology is an open source license compliance software system and toolkit. As a
 FOSSology does not give legal advice.
 https://fossology.org/
 
+## Overview
 
-<h1 align="center">
-Migration of UI @ <a href="https://github.com/fossology">FOSSology</a> 
-</h1>
-</div>
+The UI Migration project is an effort focused on generating the new component-based architecture with the integration of the APIs. To make the project more **efficient** and **easily accessible**, an entire code base shift from Symfony-Twig to React.js is proposed. React.js features an incrementally adaptable architecture that focuses on declarative rendering and component composition. React.js component system will enable us to organize the current working APIs appropriately.
 
-## Project Overview
-
-The UI Migration project is an effort focused on generating the new component-based architecture with the integration of the APIs. To make the project more efficient and easily accessible, an entire code base shift from Symfony-Twig to React.js is proposed. React.js features an incrementally adaptable architecture that focuses on declarative rendering and component composition. React.js component system will enable us to organize the current working APIs appropriately.
-
-**Mentors**: [Michael](https://github.com/mcjaeger), [Gaurav Mishra](https://github.com/GMishx), [Vivek](https://github.com/viv9k), [Sahil Jha](https://github.com/sjha2048), [Shaheem Azmal](https://github.com/shaheemazmalmmd)
 ## Objectives
 
 - Working on good interactive design, with a modern look.
@@ -40,7 +33,6 @@ The UI Migration project is an effort focused on generating the new component-ba
 
 ## Requirements
 
-The PHP versions 7.x are supported to work for FOSSology. FOSSology requires Postgresql as the database server and apache httpd 2.6 as the web server. These and more dependencies are installed by `utils/fo-installdeps`.
 
 ## Installation
 
@@ -50,65 +42,6 @@ See https://github.com/fossology/fossology/releases for source code download of 
 
 For installation instructions see [Install from Source](https://github.com/fossology/fossology/wiki/Install-from-Source)
 page in [Github Wiki](https://github.com/fossology/fossology/wiki)
-
-## Docker
-
-FOSSology comes with a Dockerfile allowing the containerized execution
-both as a single instance or in combination with an external PostgreSQL database.
-**Note:** It is strongly recommended to use an external database for production
-use since the standalone image does not take care of data persistency.
-
-A pre-built Docker image is available from [Docker Hub](https://hub.docker.com/r/fossology/fossology/) and can be run using the following command:
-``` sh
-docker run -p 8081:80 fossology/fossology
-```
-
-The docker image can then be used using http://IP_OF_DOCKER_HOST:8081/repo user fossy passwd fossy.
-
-Execution with external database container can be done using Docker Compose, via the following command:
-``` sh
-docker-compose up
-```
-
-The Docker image allows the configuration of its database connection over a set of environment variables.
-
-- **FOSSOLOGY_DB_HOST:** Hostname of the PostgreSQL database server.
-  An integrated PostgreSQL instance is used if not defined or set to `localhost`.
-- **FOSSOLOGY_DB_NAME:** Name of the PostgreSQL database. Defaults to `fossology`.
-- **FOSSOLOGY_DB_USER:** User to be used for PostgreSQL connection. Defaults to `fossy`.
-- **FOSSOLOGY_DB_PASSWORD:** Password to be used for PostgreSQL connection. Defaults to `fossy`.
-
-## Vagrant
-
-FOSSology comes with a VagrantFile that can be used to create an isolated environment for FOSSology and its dependencies.
-
-**Pre-requisites:**  Vagrant >= 2.x and Virtualbox >= 5.2.x
-
-**Steps:**
-
-```
-git clone https://github.com/fossology/fossology
-cd fossology/
-vagrant up
-```
-
-The server must be ready at [http://localhost:8081/repo/](http://localhost:8081/repo/). The login credentials are:
-
-```
-user: fossy
-pass: fossy
-```
-
-## Test Instance
-
-For trying out FOSSology quickly, a test instance is also available at [https://fossology.osuosl.org/](https://fossology.osuosl.org/). **This instance can be deleted or reinstalled at any time, thus it is not suitable for serving as your productive version**. The login credentials are as follows:
-
-```
-Username: fossy
-Password: fossy
-```
-
-**Note:** The test instance is not up to date with the latest release. The instance will reset every night at 2 am UTC and all the user uploaded data will be lost.
 
 ## Documentation
 
