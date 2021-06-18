@@ -36,18 +36,31 @@ The UI Migration project is an effort focused on generating the new component-ba
 
 ## Installation
 
-FOSSology should work with many Linux distributions.
+In the project directory, you can run:
 
-See https://github.com/fossology/fossology/releases for source code download of the releases.
+#### `yarn`
+#### `yarn start`
 
-For installation instructions see [Install from Source](https://github.com/fossology/fossology/wiki/Install-from-Source)
-page in [Github Wiki](https://github.com/fossology/fossology/wiki)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Documentation
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-We are currently migrating our documentation to Github. At this stage, you can find general documentation at:
-https://www.fossology.org/get-started/basic-workflow/
-and developer docs on [Github Wiki](https://github.com/fossology/fossology/wiki) and https://fossology.github.io/
+#### `yarn test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+#### `yarn build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Support
 
