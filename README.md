@@ -32,6 +32,8 @@ The UI Migration project is an effort focused on generating the new component-ba
 
 
 ## Requirements
+NodeJS and NPM<br>
+[https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
 
 ## Installation
