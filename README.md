@@ -17,6 +17,27 @@ FOSSology is an open source license compliance software system and toolkit. As a
 FOSSology does not give legal advice.
 https://fossology.org/
 
+
+<h1 align="center">
+Migration of UI @ <a href="https://github.com/fossology">FOSSology</a> 
+</h1>
+</div>
+
+## Project Overview
+
+The UI Migration project is an effort focused on generating the new component-based architecture with the integration of the APIs. To make the project more efficient and easily accessible, an entire code base shift from Symfony-Twig to React.js is proposed. React.js features an incrementally adaptable architecture that focuses on declarative rendering and component composition. React.js component system will enable us to organize the current working APIs appropriately.
+
+**Mentors**: [Michael](https://github.com/mcjaeger), [Gaurav Mishra](https://github.com/GMishx), [Vivek](https://github.com/viv9k), [Sahil Jha](https://github.com/sjha2048), [Shaheem Azmal](https://github.com/shaheemazmalmmd)
+## Objectives
+
+- Working on good interactive design, with a modern look.
+- Integrating the APIs to the new component-based UI structure.
+- Seamless routing and page transitions.
+- Giving the power of the node engine to our UI. Making all NPM accessible.
+- Writing detailed ​ documentation of the project, to make the
+  codebase simpler for other contributors.
+
+
 ## Requirements
 
 The PHP versions 7.x are supported to work for FOSSology. FOSSology requires Postgresql as the database server and apache httpd 2.6 as the web server. These and more dependencies are installed by `utils/fo-installdeps`.
