@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Web Workshop | NCS</title>
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="dist/reset.css" />
+        <link rel="stylesheet" href="dist/reveal.css" />
+        <link rel="stylesheet" href="dist/theme/black.css" />
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            span {
+                font-size: 18px;
+            }
+            p {
+                font-size: 20px;
+                text-align: center;
+            }
+            pre,
+            code {
+                font-size: 16px;
+            }
+            ul {
+                font-size: 20px;
+            }
+            section div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="particles-js" class="reveal">
+            <div class="slides">
+                <section>
+                    <img src="img/ncs-logo.svg" alt="" width="200px" />
+                    <br />
+                    <h1>Web Workshop</h1>
+                    <p>Press 'o' to view full slide</p>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>How website works?</h2>
+                    </section>
+                    <section>
+                        <h3>HTTP vs HTTPS</h3>
+                        <p>
+                            HTTP is a protocol to transfer data or a channel of transportation between two machines, but it sends whole data as plain text i.e. it’s human-readable,
+                            so it has the threat of leaking!
+                        </p>
+                        <p>
+                            Here data is sent in encrypted form like, e.g.If Start is our message it can be sent as 5t@rT, it’s just an example they have a more complex
+                            cryptographic algorithm for it. But the question is how it is achieved? This can be achieved by SSL/ TLS ( Secured socket Layer ) / ( Transport Layer
+                            Secured ), SSL certificates are proof that data communication is through an encrypted form
+                        </p>
+                    </section>
+                    <section>
+                        <h3>What is DNS?</h3>
+                        <p>The Domain Name System (DNS) is the phonebook of the Internet.</p>
+                    </section>
+                    <section>
+                        <h3>What is TCP?</h3>
+                        <p>
+                            TCP stands for Transmission Control Protocol, a communications standard that enables application programs and computing devices to exchange messages
+                            over a network. It is designed to send packets across the internet and ensure the successful delivery of data and messages over networks.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>What is an IP?</h3>
+                        <p>
+                            An IP address is a unique address that identifies a device on the internet or a local network. IP stands for "Internet Protocol," which is the set of
+                            rules governing the format of data sent via the internet or local network. An IP address is a string of numbers separated by periods. IP addresses are
+                            expressed as a set of four numbers — an example address might be 192.158.1.38. Each number in the set can range from 0 to 255. So, the full IP
+                            addressing range goes from 0.0.0.0 to 255.255.255.255.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>What is Domain?</h3>
+                        <p>
+                            Think of a domain as your home address. If a friend of yours wants to visit you, how would you help him? By providing your address right? The same goes
+                            for your website. The domain allows users to identify your site. Without a domain, the user would have to enter the IP address to visit your site. So
+                            the domain name is actually a shortcut to your site. It is easy for users to remember the name rather than remembering some random numbers. Top-level
+                            domains are- .com and .org
+                        </p>
+                        <img src="img/1.png" alt="" srcset="" />
+                    </section>
+                    <section>
+                        <img src="img/2.png" alt="" />
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>HTML5</h2>
+                    </section>
+                    <section>
+                        <h3>What is HTML and Why HTML?</h3>
+                        <p>
+                            HTML is a markup language for hypertext (hence the name). In simple terms, HTML is a set of commands that tell web browsers how to display specific
+                            parts of websites.
+                        </p>
+                        <img src="img/3.png" alt="" srcset="" />
+                        <p>HTML is the fundamental language in which most web pages are written.</p>
+                    </section>
+                    <section>
+                        <h3>Why HTML5?</h3>
+                        <p>HTML5 supports both video and audio. In HTML5, vector graphics are supported by default. We can draw shapes like circles, rectangles, triangles.</p>
+                        <img src="img/4.png" alt="" />
+                        <p>Basic Format for HTML Doc</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>HTML Tags</h2>
+                    </section>
+                    <section>
+                        <h3>Self closing and Non-self closing tags</h3>
+                        <img src="img/5.png" alt="" />
+                        <p>
+                            Examples of self closing tags: <br />
+                            &lt;area /> &lt;base /> &lt;br /> &lt;col /> &lt;embed /> &lt;hr /> &lt;img /> &lt;input />
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Division Tag</h3>
+                        <p>
+                            The &lt;div> element only represents its child elements and doesn’t have a special meaning. It can be used with the lang, title, and class attributes to
+                            add semantics that is common to a group of consecutive elements.
+                        </p>
+                        <code>&lt;div>This is a division 1.&lt;/div></code>
+                        <br />
+                        <code>&lt;div>This is a division 2.&lt;/div></code>
+                    </section>
+                    <section>
+                        <h3>Meta Tag & SEO</h3>
+                        <p>
+                            SEO stands for Search Engine Optimization, which is the practice of increasing the quantity and quality of traffic to your website through organic
+                            search engine results.
+                        </p>
+                        <img src="img/6.png" alt="" />
+                    </section>
+                    <section>
+                        <h3>Headings, Paragraph and Typography</h3>
+                        <p>Heading Tags: h1 - h6</p>
+                        <p>&lt;p>This is a paragraph&lt;/p></p>
+                        <p>
+                            &lt;b> - Bold text &emsp; &lt;strong> - Important text <br />
+                            &lt;i> - Italic text &emsp; &lt;em> - Emphasized text <br />
+                            &lt;mark> - Marked text &emsp; &lt;small> - Smaller text <br />
+                            &lt;del> - Deleted text &emsp; &lt;ins> - Inserted text <br />
+                            &lt;sub> - Subscript text &emsp; &lt;sup> - Superscript text
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Link, Anchor and Image tag</h3>
+                        <p>&lt;link rel="stylesheet" href="styles.css" /></p>
+                        <p>&lt;a href="https://www.w3schools.com">Link&lt;/a></p>
+                        <p>&lt;img border="0" alt="W3Schools" src="logo_w3s.gif" width="100" height="100" /></p>
+                    </section>
+                    <section>
+                        <h3>Lists in HTML</h3>
+                        <pre><code>
+                                <!--  Unordered List -->
+                                &lt;ul> 
+                                &emsp;&emsp;&lt;li>Coffee&lt;/li> 
+                                &emsp;&emsp;&lt;li>Tea&lt;/li> 
+                                &emsp;&emsp;&lt;li>Milk&lt;/li> 
+                                &lt;/ul>
+                                <!--  Ordered List -->
+                                &lt;ol>
+                                &emsp;&emsp;&lt;li>Coffee&lt;/li>
+                                &emsp;&emsp;&lt;li>Tea&lt;/li>
+                                &emsp;&emsp;&lt;li>Milk&lt;/li>
+                                &lt;/ol>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Nested List</h3>
+                        <img src="img/7.png" alt="" width="400px" />
+                    </section>
+                    <section>
+                        <h3>Table Tag</h3>
+                        <img src="img/8.png" alt="" width="300px" />
+                    </section>
+                    <section>
+                        <h3>Form Input Tag</h3>
+                        <img src="img/9.png" alt="" />
+                    </section>
+                    <section>
+                        <h3>Form Tag</h3>
+                        <img src="img/10.png" alt="" width="400px" />
+                    </section>
+                    <section>
+                        <img src="img/11.png" alt="" width="500px" />
+                        <p>
+                            Button type: <br />
+                            &lt;button type="button | submit | reset">
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Inline and block elements</h3>
+                        <img src="img/12.png" alt="" />
+                        <img src="img/13.png" alt="" />
+                    </section>
+                    <section>
+                        <h3>Entities Tag</h3>
+                        <img src="img/14.png" alt="" />
+                    </section>
+                    <section>
+                        <h3>Semantic Elements</h3>
+                        <p>
+                            A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic elements: &lt;div> and &lt;span> -
+                            Tells nothing about its content. Examples of semantic elements: &lt;form>, &lt;table>, and &lt;article> - Clearly defines its content.
+                        </p>
+                        <img src="img/15.png" alt="" width="500px" />
+                    </section>
+                    <section>
+                        <img src="img/16.png" alt="" />
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Cascading Style Sheets (CSS)</h2>
+                    </section>
+                    <section>
+                        <h3>CSS Selectors</h3>
+                        <img src="img/27.png" alt="" />
+                    </section>
+                    <section>
+                        <img src="img/26.png" alt="" width="300px" />
+                    </section>
+                    <section>
+                        <h3>CSS Units (em, rem, vh, vw)</h3>
+                        <img src="img/19.png" alt="" />
+                    </section>
+                    <section>
+                        <h3>CSS Colours</h3>
+                        <img src="img/28.png" alt="" />
+                    </section>
+                    <section>
+                        <h3>Padding and Margin</h3>
+                        <img src="img/29.png" alt="" width="500px" />
+                    </section>
+                    <section>
+                        <h3>Alignment in CSS</h3>
+                        <img src="img/30.png" alt="" width="300px" />
+                    </section>
+                    <section>
+                        <h3>Links</h3>
+                        <pre><code>a:visited { 
+    background-color: cyan; 
+} 
+a:hover { 
+    background-color: lightgreen;
+} 
+a:active { 
+    background-color: hotpink; 
+} 
+a:visited { 
+    background-color: #f44336; 
+    color: white; 
+    padding: 14px 25px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+}</code></pre>
+                    </section>
+                    <section>
+                        <h3>Display inline and display block</h3>
+                        <img src="img/31.png" alt="" />
+                    </section>
+                    <section>
+                        <h3>Positioning in CSS</h3>
+                        <img src="img/32.png" alt="" />
+                    </section>
+                    <section>
+                        <h3>Responsive designs ( Media query )</h3>
+                        <img src="img/17.png" alt="" width="400px" />
+                        <br />
+                        <img src="img/18.png" alt="" width="400px" />
+                    </section>
+                    <section>
+                        <h3>Flexbox</h3>
+                        <p>The flex container properties are:</p>
+                        <img src="img/20.png" alt="" />
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Javascript</h2>
+                    </section>
+                    <section>
+                        <h3>Dom Manipulation</h3>
+                        <p>Targeting Element</p>
+                        <img src="img/21.png" alt="" />
+                    </section>
+                    <section>
+                        <h3>Array Functions</h3>
+                        <p>
+                            Array.forEach() <br />
+                            Array.map() <br />
+                            Array.filter() <br />
+                            Array.reduce() <br />
+                            Array.reduceRight() <br />
+                            Array.every() <br />
+                            Array.some() <br />
+                            Array.indexOf() <br />
+                            Array.lastIndexOf() <br />
+                            Array.find() <br />
+                            Array.findIndex() <br />
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Regular Expression</h3>
+                        <pre>
+                            <code>
+                                var str = "Visit W3Schools";
+                                var n = str.search(/w3schools/i);
+                                
+                                // Output
+                                6
+                            </code>
+                        </pre>
+                    </section>
+                    <section>
+                        <h3>Cookies and local Storage</h3>
+                        <p>Cookie</p>
+                        <pre>
+                            <code>document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";</code>
+                        </pre>
+                        <br />
+                        <p>LocalStorage</p>
+                        <pre>
+                            <code>localStorage.setItem("name", "John Doe");
+localStorage.getItem("name");</code>
+                        </pre>
+                    </section>
+                    <section>
+                        <h3>Javascript Object Notation (JSON)</h3>
+                        <p>JSON or JavaScript Object Notation is a lightweight text-based open standard designed for human-readable data interchange.</p>
+                        <img src="img/22.png" alt="" width="300px" />
+                    </section>
+                    <section>
+                        <h3>Async Vs Sync Code</h3>
+                        <p>
+                            Synchronous means to be in a sequence, i.e. every statement of the code gets executed one by one. So, basically a statement has to wait for the earlier
+                            statement to get executed.
+                        </p>
+                        <p>
+                            Asynchronous code allows the program to be executed immediately where the synchronous code will block further execution of the remaining code until it
+                            finishes the current one.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Web APIs</h3>
+                        <p>
+                            Application Programming Interfaces (APIs) are constructs made available in programming languages to allow developers to create complex functionality
+                            more easily.
+                            <br /><br />
+                            Example: <a href="https://jsonplaceholder.typicode.com/posts">https://jsonplaceholder.typicode.com/posts</a>
+                        </p>
+                        <br />
+                        <p>Methods to fetch data from an API:</p>
+                        <ul>
+                            <li>Callbacks</li>
+                            <li>Promises</li>
+                            <li>Async / Await</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Callbacks</h3>
+                        <img src="img/23.png" alt="" width="500px" />
+                    </section>
+                    <section>
+                        <h3>Promises</h3>
+                        <img src="img/24.png" alt="" width="500px" />
+                    </section>
+                    <section>
+                        <h3>Async/Await</h3>
+                        <img src="img/25.png" alt="" width="500px" />
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Introduction to Node.js</h2>
+                    <p>
+                        Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web
+                        browser.
+                    </p>
+                    <p>Package Registry: <a href="https://www.npmjs.com/">https://www.npmjs.com/</a></p>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Javascript Frontend Frameworks</h2>
+                        <p>There are many frameworks which use javascript to create single page applications.</p>
+                        <p>Among those these are the most common one:</p>
+                        <ul>
+                            <li>React JS</li>
+                            <li>Vue JS</li>
+                            <li>Angular JS</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>React JS</h3>
+                        <p>
+                            React is an open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of
+                            individual developers and companies. React can be used as a base in the development of single-page or mobile applications.
+                        </p>
+                        <p>Link: <a href="https://reactjs.org/">https://reactjs.org/</a></p>
+                    </section>
+                    <section>
+                        <h3>Vue JS</h3>
+                        <p>Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.</p>
+                        <p>Link: <a href="https://vuejs.org/">https://vuejs.org/</a></p>
+                    </section>
+                    <section>
+                        <h3>Angular JS</h3>
+                        <p>
+                            AngularJS is a JavaScript-based open-source front-end web framework mainly maintained by Google and by a community of individuals and corporations to
+                            address many of the challenges encountered in developing single-page applications.
+                        </p>
+                        <p>Link: <a href="https://angularjs.org/">https://angularjs.org/</a></p>
+                    </section>
+                </section>
+
+                <!-- End Slide -->
+                <section>
+                    <h1>Thank You</h1>
+                    <img src="img/ncs-logo.svg" alt="" width="200px" />
+                </section>
+            </div>
+        </div>
+
+        <!-- Javascript -->
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            Reveal.initialize({
+                hash: true,
+                plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+            });
+        </script>
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
